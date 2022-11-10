@@ -1,0 +1,57 @@
+###
+GET http://localhost:4000
+
+###
+GET http://localhost:4000/family
+
+###
+GET http://localhost:4000/van
+
+###
+GET http://localhost:4000/api/family/5
+
+###
+GET http://localhost:4000/api/van/5
+
+###
+POST http://localhost:4000/api/family
+Content-Type: application/json
+
+{
+    "member_name":"Chris",
+    "driver_license": true,
+    "van_id": 1
+}
+
+###
+POST http://localhost:4000/api/van
+Content-Type: application/json
+
+{
+    "make":"Volvo",
+    "license_plate": "55555" 
+}
+
+###
+PATCH  http://localhost:4000/api/family/1
+Content-Type: application/json
+
+{
+   "member_name":"Big"
+}
+
+
+###
+PATCH  http://localhost:4000/api/van/1
+Content-Type: application/json
+
+{
+   "make":"bugatti",
+   "license_plate": "77777"
+}
+
+###
+DELETE  http://localhost:4000/api/family/12
+
+###
+DELETE  http://localhost:4000/api/van/3
